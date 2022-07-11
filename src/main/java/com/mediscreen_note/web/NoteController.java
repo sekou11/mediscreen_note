@@ -66,7 +66,7 @@ public class NoteController {
 	
 	    @PostMapping("/add")
 	    public ResponseEntity<NoteDto> saveNote(@Valid @RequestBody NoteDto noteDto){
-	        LOGGER.info("POST /api/v1/add newNote= " + noteDto);
+	        LOGGER.info("POST /api/v1/add newNote= " + noteDto.getId());
 	        Note noteRequest = modelMapper.map(noteDto, Note.class);
 	        Note note = noteService.saveNote(noteRequest);
 	        NoteDto savedNote = modelMapper.map(note, NoteDto.class);
@@ -86,6 +86,7 @@ public class NoteController {
 	   
 	    @GetMapping("/delete/{id}")
 	    public void delete(@PathVariable String id) {
+	    	  LOGGER.info("POST /note/delete noteToDelete id = " + id);
 	        noteService.deleteNote(id);
 	    }  
 
