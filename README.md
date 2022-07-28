@@ -30,7 +30,7 @@ Install Docker: - https://www.docker.com/products/docker-desktop
 
 MicroServices Details
 
-Port:9012 - PatientHistorical
+Port:8702  Patient histoeiq
 
 
 This microservice allow to process CRUD operations in order to manage DoctorNote about Patient. 
