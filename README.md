@@ -1,5 +1,10 @@
 # mediscreen_note
 
+![Diagramme sans nom-Page-3 drawio](https://user-images.githubusercontent.com/42712490/181506637-3358dab7-7a37-494a-b8ba-6b6a35ef56b5.png)
+
+
+
+
 Technology and Prerequisites
 
 
