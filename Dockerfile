@@ -1,3 +1,6 @@
-FROM openjdk:8-jdk-alpine
-COPY target/*.jar mediscreen_note-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","-Dspring.profiles.active=docker","/mediscreen_note-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:8
+ADD target/mediscreen_note-0.0.1-SNAPSHOT.jar mediscreen_note-0.0.1-SNAPSHOT.jar
+EXPOSE 8702
+ENTRYPOINT ["java","-jar","mediscreen_note-0.0.1-SNAPSHOT.jar"]
+
+
